@@ -17,7 +17,8 @@ private:
     public:
         string contents;
         ListNode *next;
-        ListNode(string pContents) {contents = pContents; next=NULL;};
+        ListNode *prev;
+        ListNode(string pContents) {contents = pContents; next=NULL; prev=NULL;};
     };
     ListNode *head;
 public:
